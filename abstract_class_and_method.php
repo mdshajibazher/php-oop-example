@@ -7,6 +7,10 @@ abstract class Shape{
 
     abstract function getPerimeter();
 
+    final function exampleFinalFunction(){
+        echo "This is a final function you cant overwrite it";
+    }
+
 }
 
 
@@ -47,6 +51,13 @@ class Triangle extends Shape{
     {
         // TODO: Implement getPerimeter() method.
     }
+
+    function exampleFinalFunction(){
+        echo "Fatal error: Cannot override fin
+al method Shape::exampleFinalFun
+ction()";
+    }
 }
 $t = new Triangle();
 $t->getPerimeter();
+$t->exampleFinalFunction();
