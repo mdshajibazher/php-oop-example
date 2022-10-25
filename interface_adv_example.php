@@ -1,6 +1,6 @@
 <?php
 
-class DistrictCollection implements IteratorAggregate {
+class DistrictCollection implements IteratorAggregate,Countable {
     private array $districts = [];
 
 
@@ -29,6 +29,7 @@ $districts->add("Chattagram");
 $districts->add("Bogra");
 $districts->add("Rajshahi");
 echo "District count is : ".$districts->count()."\n";
+echo "Another way District count is : ".count($districts)."\n";
 print_r($districts);
 
 
