@@ -15,6 +15,7 @@ class favColor{
     private $data;
     private $color;
 
+
     function __construct($data_argument)
     {
         $this->data = $data_argument;
