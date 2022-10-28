@@ -8,6 +8,8 @@ trait NumberSeriesOne{
     function numberSeriesB(){
         echo "number series B\n";
     }
+
+    abstract function mustImplementMethod();
 }
 
 trait AnotherTrait{
@@ -25,6 +27,10 @@ class NumberSeries{
 
     function modifiedNumberSeriesA(){
         echo "number series A\n";
+    }
+
+    function mustImplementMethod(){
+        echo "Something";
     }
 
 }
