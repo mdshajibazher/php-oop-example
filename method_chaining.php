@@ -43,4 +43,10 @@ class StringUtility{
 
 
 $s = new StringUtility("Hello World");
-$s->search("World")->replace("Peter")->uppercase()->print();
+$s
+->search("World")
+->replace("Peter")
+->search("Hello")
+->replace("Hi")
+->uppercase()
+->print();
