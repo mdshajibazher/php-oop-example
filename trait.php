@@ -12,11 +12,21 @@ trait NumberSeriesOne{
 
 trait AnotherTrait{
     use NumberSeriesOne;
+
+    function something(){
+        echo "hello";
+    }
 }
 
 
 class NumberSeries{
-    use AnotherTrait;
+    use NumberSeriesOne{
+        numberSeriesA as modifiedNumberSeriesA;
+    }
+
+    function modifiedNumberSeriesA(){
+        echo "number series A\n";
+    }
 
 }
 
